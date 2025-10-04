@@ -1,0 +1,29 @@
+<view class="container">
+  <!-- 自定义导航栏 -->
+  <view class="navbar" style="height:{{navHeight}}px;">
+    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
+  </view>
+  
+  <view class="content-container">
+    <!-- 拍照识别按钮 -->
+    <view class="camera-button" bindtap="takePhoto">
+      <view class="camera-outer-ring">
+        <view class="camera-icon-container">
+          <image src="/images/icons/camera.png" class="camera-icon"></image>
+        </view>
+      </view>
+      <text class="camera-text">点击按钮拍照/视频识别</text>
+    </view>
+
+    <!-- 功能按钮区 -->
+    <view class="functions">
+    <view class="button-group">
+      <view class="item">识别历史</view>
+      <view class="item">关于</view>
+      <view class="item">社群</view>
+      <view class="item">反馈</view>
+    </view>
+        
+    </view>
+  </view>
+</view>

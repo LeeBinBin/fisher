@@ -1,0 +1,271 @@
+.navbar {
+  background: linear-gradient(130deg,#009fad 0%,#3ebfca 30%,#5dcec7 60%,#419bc5 100%);
+  width: 100%;
+  color: #fff;
+}
+.navbar-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 58rpx;
+}
+
+.back-icon, .help-icon {
+  width: 70rpx;
+  height: 70rpx;
+  color: #fff;
+}
+
+.nav-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+/* AI助手欢迎区 */
+.ai-greeting {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 30rpx;
+  /* background: linear-gradient(135deg, #b8e7f1 0%, #dbeafe 100%); */
+  border-radius: 0 0 40rpx 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 5rpx 15rpx rgba(59, 130, 246, 0.1);
+}
+
+/* 新增和修改的样式 */
+.ai-avatar-container {
+  position: relative;
+  margin-right: 30rpx;
+  /* 增加容器阴影增强立体感 */
+  filter: drop-shadow(0 15rpx 20rpx rgba(59, 130, 246, 0.2));
+}
+
+.ai-avatar-outer {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  /* 双层边框营造立体效果 */
+  border: 8rpx solid #fff;
+  box-shadow: 0 4rpx 12rpx rgba(59, 130, 246, 0.15) inset,
+              0 6rpx 16rpx rgba(59, 130, 246, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 头像主体样式调整 */
+.ai-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  /* 增加内阴影增强层次 */
+  box-shadow: 0 3rpx 8rpx rgba(0, 0, 0, 0.1) inset;
+  position: relative;
+  z-index: 1;
+  /* 添加轻微缩放动画 */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 浮动动画增强活力感 */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6rpx); }
+}
+
+/* 优化脉冲动画效果 */
+.avatar-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 50%;
+  background-color: rgba(59, 130, 246, 0.5);
+  animation: pulse 2.5s infinite;
+  z-index: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+}
+
+.ai-avatar {
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  border: 6rpx solid #fff;
+  box-shadow: 0 10rpx 30rpx rgba(59, 130, 246, 0.3);
+  position: relative;
+}
+
+.greeting-content {
+  flex: 1;
+}
+
+.greeting-title {
+  color: #1e40af;
+  display: block;
+  margin-bottom: 10rpx;
+  font-family: var(--font-heading);
+  font-size: 36rpx;
+  font-weight: 600;
+  letter-spacing: 1rpx;
+}
+
+.greeting-desc {
+  font-size: 26rpx;
+  color: #3b82f6;
+  opacity: 0.8;
+}
+
+/* 历史咨询记录区 */
+.history-area {
+  padding: 0 30rpx;
+  margin-bottom: 60rpx;
+}
+
+.area-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1e40af;
+  margin-bottom: 20rpx;
+  display: block;
+  padding-left: 10rpx;
+  border-left: 6rpx solid #3b82f6;
+  margin-top: 40rpx;
+}
+
+.history-list {
+  background-color: #fff;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 0 3rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  padding: 15rpx 30rpx;
+  border-bottom: 1rpx solid #f0f7ff;
+  transition: background-color 0.3s ease;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-item:hover {
+  background-color: #f8fafc;
+}
+
+.history-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.history-title {
+  font-size: 28rpx;
+  color: #1e40af;
+  display: block;
+  margin-bottom: 5rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-time {
+  font-size: 22rpx;
+  color: #94a3b8;
+}
+
+.history-arrow {
+  width: 24rpx;
+  height: 24rpx;
+  color: #cbd5e1;
+}
+
+/* 底部输入区 */
+.input-area {
+  position: fixed;
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+  box-shadow: 0 -4rpx 30rpx rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  border-radius: 45rpx 45rpx 0 0;
+  border-top: 2rpx solid #e4e2e2;
+}
+
+.input-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f5f9;
+  border-radius: 60rpx;
+  padding: 15rpx 10rpx 15rpx 28rpx;
+  position: relative;
+  max-height: 60rpx;
+}
+
+input {
+  font-size: 28rpx;
+  color: #1e293b;
+  background: transparent;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.input-placeholder {
+  color: #94a3b8;
+}
+.send-img {
+  width: 60rpx;
+  height: 60rpx;
+}
+.input-container image {
+  position: absolute;
+  right: 20rpx;
+}
+.input-container {
+  transition: all 0.3s ease;
+}
+.input-container:focus-within {
+  box-shadow: 0 0 0 4rpx rgba(0, 159, 173, 0.2);
+  transform: translateY(-2rpx);
+}
+
+.send-button {
+  transform: scale(0.6);
+}
+
+.send-button .van-button {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.inline-icon-style {
+  transform: rotate(180deg);
+}
+
+.overlay-container {
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

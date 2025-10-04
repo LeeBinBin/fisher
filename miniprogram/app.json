@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/AIpage/AIpage",
+    "pages/consult/consult",
+    "pages/my/my",
+    "pages/infor/infor",
+    "pages/details/details"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "渔康智鉴",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "custom": true,
+    "color": "#bebebe",
+    "selectedColor": "#6495ed",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/AIpage/AIpage",
+        "text": "AI助手"
+      },
+      {
+        "pagePath": "pages/consult/consult",
+        "text": "专家咨询"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-overlay": "@vant/weapp/overlay/index",
+    "van-loading": "@vant/weapp/loading/index"
+  }  
+}

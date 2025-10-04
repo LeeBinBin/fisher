@@ -1,0 +1,119 @@
+Page({
+  data: {
+    navHeight: 0,
+    pageTitle: '渔康智鉴',
+    currentTag: 0,
+    // 专家分类标签列表
+    tagList: [
+      { id: 0, name: "全部专家" },
+      { id: 1, name: "鱼类病害" },
+      { id: 2, name: "遗传育种" },
+      { id: 3, name: "水产养殖" }
+    ],
+    // 专家列表数据
+    expertList: [
+      {
+        expertId: 1,
+        name: "鲁义善",
+        avatar:"/images/avatar/鲁义善.png",
+        title: "研究员",
+        field: "病害免疫",
+        intro: "博士，教授，博士生导师/硕士生导师。广东省“千百十”工程省级培养对象，深圳市地方级领军人才，全国首席科学传播专家，国际食品法典（CAC）抗菌素耐药专家委员会委员，全国水产品质量安全专家工作组成员，农业部水产养殖病害防治专家委员会委员，全国兽药残留与耐药性控制专家委员，挪威特罗姆瑟大学渔业科学学院访问学者。现为广东省水生动物健康评估工程技术研究中心主任，广东省教育厅“广东海洋大学-英国斯特灵大学渔用疫苗实用化技术”国际合作平台负责人，深圳市海水经济动物种苗健康评价公共技术服务平台主任。近年来主持国家自然科学基金2项、省部级项目7项；参与973计划、国家科技支撑项目等省部级以上项目16项；发表学术论文264篇，其中SCI收录113篇；授权专利38项。研究领域主要涉及水生动物病原生物学、鱼类免疫学等。",
+        consultCount: 421,
+        responseRate: 99,
+        score: 4.9
+      },
+      {
+        expertId: 2,
+        name: "叶剑敏",
+        avatar:"/images/avatar/叶剑敏.png",
+        title: "研究员",
+        field: "水产养殖",
+        intro: "博士，教授，国家青年海外高层次人才获得者。长期从事水产健康养殖研究，已主持国家自然科学基金面上项目3项、广东省农业农村厅重点项目、广东省海洋渔业厅重点项目等各类科研项目近20项，发表相关SCI论文近200篇。",
+        consultCount: 315,
+        responseRate: 97,
+        score: 4.7
+      },
+      {
+        expertId: 3,
+        name: "李潮",
+        avatar:"/images/avatar/李潮.png",
+        title: "研究员",
+        field: "遗传育种",
+        intro: "博士学历，研究生导师。长期致力于鱼类遗传育种、渔业资源与进化生物学研究，重点围绕鲫鱼遗传育种、北江渔业资源调查与评估、唐鱼复合体物种分化等方向开展系统工作。主持多项省部级及国家级科研项目，发表学术论文近30篇。在培育具有速生、抗病、抗逆与高效饲料利用率等优良性状的水产新品种方面，积累了扎实的研发经验与成功的实践成果。",
+        consultCount: 238,
+        responseRate: 98,
+        score: 4.9
+      },
+      {
+        expertId: 4,
+        name: "李炳喜",
+        avatar:"/images/avatar/李炳喜.png",
+        title: "研究员",
+        field: "病害免疫",
+        intro: "博士学历，研究生导师。长期致力于鱼类免疫学领域的研究工作，主要聚焦于硬骨鱼体液免疫关键共刺激分子的功能解析、共刺激信号调控硬骨鱼抗体分泌细胞形成的分子机制，以及从硬骨鱼到哺乳动物体液免疫应答的演化规律与机制差异比较。主持多项省部级及国家级科研项目，已发表学术论文30篇。在鱼类病害免疫防控技术的开发与应用方面积累了丰富的实践经验。",
+        consultCount: 196,
+        responseRate: 96,
+        score: 4.87
+      },
+      {
+        expertId: 5,
+        name: "吴丽婷",
+        avatar:"/images/avatar/吴丽婷.png",
+        title: "研究员",
+        field: "病害免疫",
+        intro: "理学博士，华南师范大学硕士生导师，西班牙国家农业与食品技术研究所访问学者。长期从事鱼类免疫学研究，目前已主持和参与国家自然科学基金联合项目、青年基金等项目共计6项，在Journal of Immunology，Aquaculture，Developmental & Comparative Immunology，Fish & Shellfish Immunology等杂志发表SCI论文30余篇。",
+        consultCount: 183,
+        responseRate: 98,
+        score: 4.76
+      },
+      {
+        expertId: 6,
+        name: "涂笑",
+        avatar:"/images/avatar/涂笑.png",
+        title: "研究员",
+        field: "病害免疫",
+        intro: "理学博士，华中农业大学副教授，硕士生导师。长期从事水产动物寄生虫病防控研究，围绕鱼类重大寄生虫病流行病学、致病机制、无公害渔药研发开展研究工作。入选了中国科协第八届青年人才托举工程计划，已主持国家自然科学基金面上项目、青年项目等相关项目8项；发表相关SCI论文18篇。",
+        consultCount: 179,
+        responseRate: 97,
+        score: 4.7
+      },
+      {
+        expertId: 7,
+        name: "陈建林",
+        avatar:"/images/avatar/陈建林.png",
+        title: "研究员",
+        field: "病害免疫",
+        intro: "理学博士，中国科学院水生生物研究所博士后，硕士生导师。聚焦于鱼类诺卡氏菌病严重限制我国水产养殖业健康发展的热点问题，长期专注于该病的主要致病菌——鰤鱼诺卡氏菌的致病机制与防控策略。近年来，主持1项中国博士后科学基金第73批面上项目、1项广东省自然科学基金面上项目、1项深圳市自然科学基金面上项目、1项海南省海洋生物资源功能性成分研究与利用重点实验室开放课题专项项目和1项中山市社会公益科技研究项目；此外，以第一（或通讯）作者发表SCI英文科技论文20余篇，CSCD中文核心期刊3篇；申报发明性专利10余件，其中授权专利7件；曾获评2023年度深圳市优秀博士后（Top 50）及2024年度深圳市大鹏新区“鹏程计划”科技人才。",
+        consultCount: 180,
+        responseRate: 97,
+        score: 4.68
+      },
+      {
+        expertId: 8,
+        name: "俞也频",
+        avatar:"/images/avatar/俞也频.png",
+        title: "副研究员",
+        field: "病害免疫",
+        intro: "博士学位，2021起任职于广东省科学院动物研究所。长期以来，俞也频博士聚焦动物免疫学及病毒宿主互作领域，围绕重要病毒性病原感染致病机制、宿主免疫抗病机制及病毒性病原检测技术开发三大方向开展基础与应用基础研究，研究对象涵盖流感病毒 H1N1、神经坏死病毒 NNV 等重要病毒，以及蝙蝠、鱼类等宿主。科研成果方面，俞也频博士主持国家自然科学基金项目、博士后基金项目、广州市科技项目、广东省科学院 “百人计划” C 类项目等国家、省、市各级科研项目 6 项；以第一或通讯（含共同）作者身份发表 SCI 论文 15 篇，另有多篇合作发表 SCI 论文，累计发表 SCI 论文 40 余篇；还参与申请 “一种通用型穿山甲瘟病毒荧光定量 RT-PCR 引物及其检测方法” 发明专利 1 项，在科研实践与技术转化领域均有显著贡献。",
+        consultCount: 167,
+        responseRate: 96,
+        score: 4.63
+      },
+    ],
+  },
+
+  onLoad() {
+    const menuButtonObject = wx.getMenuButtonBoundingClientRect();
+    wx.getSystemInfo({
+      success: res => {
+        const statusBarHeight = res.statusBarHeight;
+        //！此处有修改
+        const navHeight = statusBarHeight +  menuButtonObject.height + (menuButtonObject.top - statusBarHeight) * 2;
+        this.setData({
+          navHeight: navHeight
+        });
+      }
+    });
+  }
+});

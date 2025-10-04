@@ -1,0 +1,92 @@
+<view>
+  <!-- 自定义导航栏 -->
+  <view class="navbar" style="height:{{navHeight+10}}px;">
+    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
+  </view>
+
+
+  <!-- AI助手头像与欢迎区 -->
+  <view class="ai-greeting">
+    <!-- 修改后的AI头像区域代码-->
+    <view class="ai-avatar-container">
+      <view class="avatar-pulse"></view>
+      <!-- 增加外层立体边框 -->
+      <view class="ai-avatar-outer">
+        <image src="/images/icons/robot.png" class="ai-avatar"></image>
+      </view>
+    </view>
+    <view class="greeting-content">
+      <text class="greeting-title">Hi！我是渔康智鉴AI助手~</text>
+      <text class="greeting-desc">🐟你好，我是资深的水产养殖专家，能助您解决各类养殖问题🐟</text>
+    </view>
+  </view>
+
+  <!-- 历史咨询记录区 -->
+  <view class="history-area">
+    <text class="area-title">历史咨询</text>
+    <view class="history-list">
+      <!-- 历史记录1 -->
+      <view class="history-item">
+        <view class="history-content">
+          <text class="history-title">当鱼出现腐烂鳃时如何快速治疗？</text>
+          <text class="history-time">2025-09-20 14:30</text>
+        </view>
+      </view>
+
+      <!-- 历史记录2 -->
+      <view class="history-item">
+        <view class="history-content">
+          <text class="history-title">鲢鱼同时患眼部病变、鳍部病变如何治疗？</text>
+          <text class="history-time">2025-09-18 09:15</text>
+        </view>
+      </view>
+
+       <!-- 历史记录3 -->
+       <view class="history-item">
+        <view class="history-content">
+          <text class="history-title">草鱼患溃疡病如何治疗？</text>
+          <text class="history-time">2025-09-18 09:15</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 底部输入区 -->
+  <view class="input-area">
+    <view class="input-container">
+      <input
+       placeholder="请输入您的问题..." placeholder-class="input-placeholder"
+       bindinput="onInputChange"
+       value="{{inputValue}}"
+      ></input>
+      <van-button
+       type="info"
+       class="send-button"
+       round
+       loading="{{ isLoading }}"
+       disabled="{{ isDisabled }}"
+       bindtap="onSend"
+      >
+        <van-icon 
+        name="down"
+        size="50rpx"
+        class="inline-icon-style" />
+      </van-button>
+      
+    </view>
+  </view>
+</view>
+<van-overlay
+show="{{ isLoading }}" 
+>
+  <view class="overlay-container">
+    <van-loading
+    size="100rpx"
+    color="#3ecaa3"
+    vertical
+    >
+    <view style="font-size: 30rpx; color: #3ecaa3">加载中...</view>
+    </van-loading>
+  </view>
+</van-overlay>

@@ -1,0 +1,111 @@
+.navbar {
+  background: linear-gradient(130deg,#009fad 0%,#3ebfca 30%,#5dcec7 60%,#419bc5 100%);
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 40rpx 30rpx 20rpx;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 60rpx;
+}
+
+.content-container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.image-style {
+  margin-top: 65rpx;
+  width: 500rpx;
+  height: 300rpx;
+  position: absolute;
+  left: auto;
+  top: 100%;
+  transform: translateY(-50%);
+  /* 垂直居中调整 */
+}
+
+/* 拍照按钮样式 */
+.camera-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70rpx;
+}
+
+.camera-outer-ring {
+  width: 380rpx;
+  height: 380rpx;
+  border: 6rpx solid rgba(224, 240, 235, 0.9);
+  border-radius: 50%;
+  /* 居中内层容器 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-icon-container {
+  width: 330rpx;
+  height: 330rpx;
+  border: 0.4rpx solid #9ae7d1;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #a7edda 0%, #daeee8 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* #83ada1; */
+.camera-icon {
+  width: 200rpx;
+  height: 200rpx;
+  z-index: 1;
+}
+
+.camera-text {
+  color: #3ecaa3;
+  font-size: 40rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  opacity: 0.9;
+}
+
+.functions {
+  margin-top: 100rpx;
+}
+
+.item {
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 70rpx;
+  text-align: justify;
+  text-align-last: justify;
+  /* border: 7rpx solid rgba(93, 206, 199, 0.808); */
+  height: 70rpx;
+  background-image: linear-gradient(to right,#3CD3AD  0%, #4CB8C4 51%, #4CB8C4  100%);
+  background-size: 200% auto;
+  color: #fff;
+  font-size: 32rpx;
+  margin: 15rpx;
+  width: 130rpx;
+  padding: 0 210rpx;
+  overflow: visible;
+  /* box-shadow: 2rpx 2rpx 8rpx #3CD3AD; */
+  max-width: calc(50% - 20rpx);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

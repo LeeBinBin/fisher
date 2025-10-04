@@ -1,0 +1,40 @@
+<view>
+  <!-- 自定义导航栏 -->
+  <view class="navbar" style="height:{{navHeight+10}}px;">
+   <view class="navbar-return" bind:tap="return">
+    <image src="/images/icons/return.png"/>
+    <view style="font-size: 35rpx;">返回</view>
+   </view>
+    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
+  </view>
+  <!-- 信息项列表 -->
+  <view class="info-list">
+    <view class="info-item">
+      <text class="info-label">姓名</text>
+      <text class="info-value">王五</text>
+    </view>
+    
+    <view class="info-item">
+      <text class="info-label">性别</text>
+      <text class="info-value">男</text>
+    </view>
+    
+    <view class="info-item">
+      <text class="info-label">职业</text>
+      <text class="info-value">个体养殖户</text>
+    </view>
+
+    <view class="info-item">
+      <text class="info-label">电话</text>
+      <text class="info-value">18800</text>
+    </view>
+
+    <view class="info-item">
+      <text class="info-label">邮箱</text>
+      <text class="info-value">18800@qq.com</text>
+    </view>
+  </view>
+
+  <!-- 保存按钮 -->
+  <button class="save-btn">保存</button>
+</view>

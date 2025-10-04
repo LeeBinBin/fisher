@@ -1,0 +1,69 @@
+/* 信息列表样式 */
+.info-list {
+  background-color: #ffffff;
+  margin-bottom: 24px;
+}
+.navbar {
+  background: linear-gradient(130deg,#009fad 0%,#3ebfca 30%,#5dcec7 60%,#419bc5 100%);
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-return {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10rpx;
+  padding-top: 58rpx;
+}
+.navbar image {
+  height: 50rpx;
+  width: 50rpx;
+  padding-right: 5rpx;
+}
+.navbar-title {
+  padding-top: 58rpx;
+}
+.info-item {
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.info-label {
+  font-size: 16px;
+  color: #333333;
+  padding-right: 60rpx;
+}
+
+.info-value {
+  font-size: 16px;
+  color: #666666;
+  margin-right: 8px;
+  flex: 1;
+  text-align: right;
+}
+
+.arrow-right {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+/* 保存按钮样式 */
+.save-btn {
+  width: 70%;
+  height: 48px;
+  background-color:#70bbc2;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
