@@ -5,7 +5,8 @@
     "pages/consult/consult",
     "pages/my/my",
     "pages/infor/infor",
-    "pages/details/details"
+    "pages/details/details",
+    "pages/social/social"
   ],
   "window": {
     "navigationStyle": "custom",
@@ -52,6 +53,7 @@
     "van-divider": "@vant/weapp/divider/index",
     "van-button": "@vant/weapp/button/index",
     "van-overlay": "@vant/weapp/overlay/index",
-    "van-loading": "@vant/weapp/loading/index"
+    "van-loading": "@vant/weapp/loading/index",
+    "van-progress": "@vant/weapp/progress/index"
   }  
 }

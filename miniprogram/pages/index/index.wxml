@@ -31,9 +31,9 @@
         <view class="history-count">6</view>
       </view>
       <view>
-        <view class="item">
+        <navigator url="/pages/social/social" class="item">
           <text class="function-title">社群</text>
-        </view>
+        </navigator>
         <view class="item">
           <text class="function-title">反馈</text>
         </view>

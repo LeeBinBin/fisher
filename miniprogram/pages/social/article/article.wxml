@@ -1,0 +1,30 @@
+<view class="{{isLast ? 'last-container' : 'container'}}">
+  <view class="head-container-row">
+    <view style="display: flex; align-items: center;">
+      <view wx:if="{{ rank === 1 }}">🥇</view>
+      <view wx:if="{{ rank === 2 }}">🥈</view>
+      <view wx:if="{{ rank === 3 }}">🥉</view>
+      <text>{{ articleData.title }}</text>
+    </view>
+    <van-button 
+    size="small"
+    round
+    plain
+    color="#bfbfbf"
+    >
+    阅读全文
+    </van-button>
+  </view>
+
+  <view class="middle-container-row">
+    <text class="artist">作者：{{ articleData.artist }}</text>
+    <view class="divider"></view>
+    <text class="relese-time">发布时间：{{ articleData.releaseTime }}</text>
+  </view>
+
+  <view class="bottom-container-row">
+    <text>热度值：{{ articleData.heat }}</text>
+  </view>
+
+  <van-progress percentage="{{ articleData.heat }}" />
+</view>

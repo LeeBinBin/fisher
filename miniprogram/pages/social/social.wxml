@@ -1,0 +1,21 @@
+<view>
+  <!-- 自定义导航栏 -->
+  <view class="navbar" style="height:{{navHeight+10}}px;">
+    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
+  </view>
+
+  <view class="header-title">
+    <text>📢 交流论坛</text>
+  </view>
+
+  <view class="article-container">
+    <text class="hot-tag">🔥 热门帖子</text>
+    <view wx:for="{{ article }}" wx:key="index">
+      <article
+      rank="{{ index + 1 }}" 
+      articleData="{{ item }}" 
+      isLast="{{ index + 1 === article.length }}"
+      />
+    </view>
+  </view>
+</view>

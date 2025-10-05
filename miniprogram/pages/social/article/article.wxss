@@ -1,0 +1,66 @@
+.container {
+  margin: 0 5rpx;
+  padding-bottom: 60rpx;
+  border-bottom: 1rpx solid rgba(219, 219, 219, 0.7);
+}
+
+.last-container {
+  margin: 0 5rpx;
+  padding-bottom: 60rpx;
+}
+
+.head-container-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20rpx 0;
+}
+
+.head-container-row text {
+  font-size: 40rpx;
+}
+
+.middle-container-row {
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0;
+}
+
+.middle-container-row text {
+  color: rgba(107, 107, 107, 0.7);
+  font-size: 30rpx;
+}
+
+.artist {
+  max-width: 200rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.divider {
+  width: 1rpx;
+  height: 30rpx;
+  margin: 0 10rpx;
+  background-color: rgba(107, 107, 107, 0.7);
+}
+
+.relese-time {
+  max-width: 500rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.bottom-container-row {
+  display: flex;
+  align-items: center;
+  margin: 10rpx 0;
+}
+
+.bottom-container-row text {
+  font-size: 27rpx;
+  color: rgba(107, 107, 107, 0.7);
+}

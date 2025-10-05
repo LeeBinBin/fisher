@@ -1,0 +1,32 @@
+.navbar {
+  background: linear-gradient(130deg,#009fad 0%,#3ebfca 30%,#5dcec7 60%,#419bc5 100%);
+  width: 100%;
+  color: #fff;
+}
+.navbar-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 58rpx;
+}
+
+.header-title {
+  width: 100%;
+  margin: 30rpx 20rpx 30rpx 20rpx;
+  text-align: center;
+}
+
+.header-title text {
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-left: -70rpx;
+}
+
+.article-container {
+  margin: 0 20rpx;
+}
+
+.hot-tag {
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+  color: rgb(54, 180, 206);
+}
