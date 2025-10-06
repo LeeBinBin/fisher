@@ -6,13 +6,8 @@
       <view wx:if="{{ rank === 3 }}">🥉</view>
       <text>{{ articleData.title }}</text>
     </view>
-    <van-button 
-    size="small"
-    round
-    plain
-    color="#bfbfbf"
-    >
-    阅读全文
+    <van-button size="small" round plain color="#009bf3">
+      阅读全文
     </van-button>
   </view>
 

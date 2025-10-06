@@ -1,14 +1,3 @@
-.navbar {
-  background: linear-gradient(130deg,#009fad 0%,#3ebfca 30%,#5dcec7 60%,#419bc5 100%);
-  width: 100%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 40rpx 30rpx 20rpx;
-  justify-content: center;
-  position: relative;
-}
-
 .container {
   width: 100%;
   min-height: 100vh;

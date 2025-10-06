@@ -1,0 +1,24 @@
+.navbar {
+  background: linear-gradient(130deg,#009fad 0%,#3ebfca 30%,#5dcec7 60%,#419bc5 100%);
+  width: 100%;
+  color: #fff;
+}
+
+.navbar-return {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10rpx;
+  padding-top: 55rpx;
+  padding-left: -10rpx;
+}
+.navbar image {
+  height: 45rpx;
+  width: 45rpx;
+  padding-right: 2rpx;
+}
+.navbar-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 51rpx;
+}

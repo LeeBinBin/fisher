@@ -1,7 +1,6 @@
 Page({
   data: {
-    navHeight: 0,
-    pageTitle: '渔康智鉴',
+    title: '渔康智鉴',
     currentTag: 0,
     // 专家分类标签列表
     tagList: [
@@ -101,19 +100,5 @@ Page({
         score: 4.63
       },
     ],
-  },
-
-  onLoad() {
-    const menuButtonObject = wx.getMenuButtonBoundingClientRect();
-    wx.getSystemInfo({
-      success: res => {
-        const statusBarHeight = res.statusBarHeight;
-        //！此处有修改
-        const navHeight = statusBarHeight +  menuButtonObject.height + (menuButtonObject.top - statusBarHeight) * 2;
-        this.setData({
-          navHeight: navHeight
-        });
-      }
-    });
   }
 });

@@ -3,30 +3,8 @@
   background-color: #ffffff;
   margin-bottom: 24px;
 }
-.navbar {
-  background: linear-gradient(130deg,#009fad 0%,#3ebfca 30%,#5dcec7 60%,#419bc5 100%);
-  width: 100%;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
 
-.navbar-return {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 10rpx;
-  padding-top: 58rpx;
-}
-.navbar image {
-  height: 50rpx;
-  width: 50rpx;
-  padding-right: 5rpx;
-}
-.navbar-title {
-  padding-top: 58rpx;
-}
+
 .info-item {
   align-items: center;
   padding: 14px 16px;

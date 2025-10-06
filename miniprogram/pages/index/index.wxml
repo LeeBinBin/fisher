@@ -1,30 +1,16 @@
 <view class="container">
-  <!-- 自定义导航栏 -->
-  <view class="navbar" style="height:{{navHeight}}px;">
-    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
-  </view>
-  
+  <navigation-bar style="width: 100%;" pageTitle="{{ title }}" ></navigation-bar>
   <view class="content-container">
     <!-- 拍照识别按钮 -->
-    <view class="camera-button" bindtap="takePhoto">
+    <navigator class="camera-button" url="/pages/details/details">
       <view class="camera-outer-ring">
         <view class="camera-icon-container">
           <image src="/images/icons/camera.png" class="camera-icon"></image>
         </view>
       </view>
       <text class="camera-text">点击按钮拍照/视频识别</text>
-    </view>
-
-    <!-- 功能按钮区 -->
-    <!-- <view class="functions">
-    <view class="button-group">
-      <view class="item">识别历史</view>
-      <view class="item">关于</view>
-      <view class="item">社群</view>
-      <view class="item">反馈</view>
-    </view>
-        
-    </view> -->
+    </navigator>
+    
     <view class="functions">
       <view class="history-item">
         <text class="function-title">识别历史</text>
@@ -32,7 +18,7 @@
       </view>
       <view>
         <navigator url="/pages/social/social" class="item">
-          <text class="function-title">社群</text>
+          <text class="function-title">论坛</text>
         </navigator>
         <view class="item">
           <text class="function-title">反馈</text>

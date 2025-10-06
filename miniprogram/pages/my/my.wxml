@@ -1,123 +1,26 @@
 <!-- 自定义导航栏 -->
-  <view class="navbar" style="height:{{navHeight+10}}px;">
-    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
-  </view>
-  <!-- 头像昵称区域 -->
-  <view class="top-box">
-    <image src="{{avatarUrl}}" class="avatar"></image>
-  </view>
+<navigation-bar style="width: 100%;" pageTitle="{{ title }}"></navigation-bar>
 
-  <!-- 面板区域 -->
-  <van-cell-group inset>
-    <van-cell
-     title="用户信息" 
-     is-link 
-     link-type="navigateTo"
-     url="/pages/infor/infor"
-     size="large"
-    >
-      <van-icon 
-      slot="icon"
-      size="35rpx"
-      name="user-o"
-      style="margin-right: 10rpx"
-      color="#cc99ff"
-      />
-    </van-cell>
-    <van-cell
-     title="我的反馈" 
-     is-link 
-     link-type="navigateTo"
-     size="large"
-    >
-      <van-icon 
-      slot="icon"
-      size="35rpx"
-      name="comment-o"
-      style="margin-right: 10rpx"
-      color="#3f51b5"
-      />
-    </van-cell>
-    <van-cell
-     title="帮助与说明" 
-     is-link 
-     link-type="navigateTo"
-     size="large"
-    >
-      <van-icon 
-      slot="icon"
-      size="35rpx"
-      name="question-o"
-      style="margin-right: 10rpx"
-      color="#3973fc"
-      />
-    </van-cell>
-    <van-cell
-     title="关于我们" 
-     is-link 
-     link-type="navigateTo"
-     size="large"
-    >
-      <van-icon 
-      slot="icon"
-      size="35rpx"
-      name="friends-o"
-      color="#3e9eef"
-      style="margin-right: 10rpx"
-      />
-    </van-cell>
-    <van-cell
-     title="退出登录" 
-     is-link 
-     link-type="navigateTo"
-     size="large"
-    >
-      <van-icon 
-      slot="icon"
-      size="35rpx"
-      name="/images/icons/logout.svg"
-      style="margin-right: 6rpx; margin-left: 4rpx"
-      />
-    </van-cell>
+<!-- 头像昵称区域 -->
+<view class="top-box">
+  <image src="{{avatarUrl}}" class="avatar"></image>
+</view>
+    
+<!-- 面板区域 -->
+<van-cell-group inset>
+  <van-cell title="用户信息" is-link link-type="navigateTo" url="/pages/infor/infor" size="large">
+    <van-icon slot="icon" size="35rpx" name="user-o" style="margin-right: 10rpx" color="#cc99ff" />
+  </van-cell>
+  <van-cell title="我的反馈" is-link link-type="navigateTo" size="large">
+    <van-icon slot="icon" size="35rpx" name="comment-o" style="margin-right: 10rpx" color="#3f51b5" />
+  </van-cell>
+  <van-cell title="帮助与说明" is-link link-type="navigateTo" size="large">
+    <van-icon slot="icon" size="35rpx" name="question-o" style="margin-right: 10rpx" color="#3973fc" />
+  </van-cell>
+  <van-cell title="关于我们" is-link link-type="navigateTo" size="large">
+    <van-icon slot="icon" size="35rpx" name="friends-o" color="#3e9eef" style="margin-right: 10rpx" />
+  </van-cell>
+  <van-cell title="退出登录" is-link link-type="navigateTo" size="large">
+    <van-icon slot="icon" size="35rpx" name="/images/icons/logout.svg" style="margin-right: 6rpx; margin-left: 4rpx" />
+  </van-cell>
 </van-cell-group>
-  <!-- <view class="panel">
-    <view class="panel-list-item" bind:tap="infor">
-      <view>
-        <image src="/images/personInfo/info.png" class="image-style"/>
-        <text>用户信息</text>
-      </view>
-      <image src="/images/personInfo/arrow.png"></image>
-    </view>
-
-    <view class="panel-list-item">
-     <view>
-      <image src="/images/personInfo/feedback.png" class="image-style" style="width:55rpx;height:55rpx"/>
-      <text>我的反馈</text>
-     </view>
-      <image src="/images/personInfo/arrow.png"></image>
-    </view>
-
-    <view class="panel-list-item" bind:tap="details">
-      <view>
-        <image src="/images/personInfo/helper.png" class="image-style"/>
-        <text>帮助与说明</text>
-      </view>
-      <image src="/images/personInfo/arrow.png"></image>
-    </view>
-
-    <view class="panel-list-item">
-      <view>
-        <image src="/images/personInfo/aboutwe.png" class="image-style"/>
-        <text>关于我们</text>
-      </view>
-      <image src="/images/personInfo/arrow.png"></image>
-    </view>
-
-    <view class="panel-list-item">
-      <view>
-        <image src="/images/personInfo/logout.png" class="image-style" style="width:40rpx;height:40rpx"/>
-        <text>退出登录</text>
-      </view>
-      <image src="/images/personInfo/arrow.png"></image>
-    </view>
-  </view> -->

@@ -1,8 +1,5 @@
 <view class="consult-page">
-  <!-- 自定义导航栏 -->
-  <view class="navbar" style="height:{{navHeight+10}}px;">
-    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
-  </view>
+  <navigation-bar pageTitle="{{ title }}"></navigation-bar> 
   <!-- 顶部导航栏 -->
   <view class="nav-bar">
     <view class="nav-title">在线咨询权威专家</view>

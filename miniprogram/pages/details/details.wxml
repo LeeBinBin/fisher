@@ -1,2 +1,24 @@
-<!--pages/details/details.wxml-->
-<text>pages/details/details.wxml</text>
+<view>
+  <!-- 自定义导航栏 -->
+  <navigation-bar pageTitle="{{ title }}" url="/pages/index/index"></navigation-bar>
+  <!-- 图片 -->
+  <image src="/images/icons/picture.png" style="width: 100%; height: 400rpx; vertical-align: top"/>
+  <!-- 第一层图标 -->
+  <view class="tools-container">
+    <view wx:for="{{ headIcons }}" wx:key="index">
+      <view class="tools-item">
+        <image src="{{item.url}}" />
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 第二层图标 -->
+  <view class="features-container">
+    <view wx:for="{{middleIcons}}" wx:key="index">
+      <view class="features-item">
+        <image src="{{item.url}}" />
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+</view>

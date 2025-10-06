@@ -1,0 +1,7 @@
+<view class="navbar" style="height:{{navBarHeight}}px">
+  <navigator wx:show="{{url !== ''}}" class="navbar-return" open-type="switchTab" url="{{url}}">
+    <image src="/images/icons/return.png"/>
+    <view style="font-size: 35rpx;">返回</view>
+   </navigator>
+  <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
+</view>

@@ -1,12 +1,7 @@
 <view>
   <!-- 自定义导航栏 -->
-  <view class="navbar" style="height:{{navHeight+10}}px;">
-   <view class="navbar-return" bind:tap="return">
-    <image src="/images/icons/return.png"/>
-    <view style="font-size: 35rpx;">返回</view>
-   </view>
-    <view class="navbar-title" style="font-size:38rpx;">{{pageTitle}}</view>
-  </view>
+  <navigation-bar pageTitle="{{ title }}" url='/pages/my/my'></navigation-bar>
+  
   <!-- 信息项列表 -->
   <view class="info-list">
     <view class="info-item">

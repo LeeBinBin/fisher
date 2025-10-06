@@ -1,5 +1,7 @@
-// app.js
 App({
+  globalData: {
+    navBarHeight: 0
+  },
   onLaunch: function () {
     this.globalData = {
       env: "cloud1-4g5k684112030b04"
@@ -12,5 +14,9 @@ App({
         traceUser: true,
       });
     }
-  },
+    const that = this;
+    // 获取系统信息
+    const systemInfo = wx.getSystemInfoSync();
+    that.globalData.navBarHeight = systemInfo.statusBarHeight+44;
+  }
 });
